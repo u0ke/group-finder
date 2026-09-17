@@ -1,107 +1,201 @@
 <!DOCTYPE html>
-<html lang="fr">
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Recherche de votre groupe</title>
+```
+<title>Group Finder</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-    <main class="container">
+```
+<main class="container">
 
-        <div class="badge">
-            S3 • LISTE DES GROUPES
+    <!-- Header -->
+    <header class="header">
+
+        <div class="header-top">
+
+            <div class="badge">
+                S3
+                <span>•</span>
+                GROUP FINDER
+            </div>
+
+            <button
+                id="themeToggle"
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch theme"
+            >
+                <span id="themeIcon">☾</span>
+                <span id="themeText">Dark</span>
+            </button>
+
         </div>
 
-        <h1>Recherche de votre groupe</h1>
+        <h1>Find Your Group</h1>
 
         <p class="subtitle">
-            Entrez votre nom de famille pour connaître votre groupe.
+            Enter your last name to instantly find your assigned group.
+        </p>
+
+    </header>
+
+
+    <!-- Main Card -->
+    <section class="card">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">
+                SEARCH
+            </span>
+
+            <h2>
+                Enter your last name
+            </h2>
+
+        </div>
+
+
+        <!-- Search -->
+        <label for="lastname">
+            Last name
+        </label>
+
+        <input
+            type="text"
+            id="lastname"
+            placeholder="e.g. AMEN"
+            autocomplete="off"
+        >
+
+        <p class="info">
+            Groups are assigned according to alphabetical order.
         </p>
 
 
-        <section class="card">
+        <!-- Result -->
+        <div
+            id="result"
+            class="result"
+            aria-live="polite"
+        >
 
-            <label for="lastname">
-                Nom de famille
-            </label>
+            <div>
 
-            <input
-                type="text"
-                id="lastname"
-                placeholder="EX. LAKBICH"
-                autocomplete="off"
-            >
+                <span class="result-icon">
+                    ⌕
+                </span>
 
-            <p class="info">
-                La recherche se fait selon l'ordre alphabétique de la liste.
-            </p>
+                <span class="result-message">
+                    Type your last name above
+                </span>
+
+            </div>
+
+        </div>
 
 
-            <div id="result" class="result">
-                Écrivez votre nom ci-dessus
+        <!-- Groups -->
+        <div class="groups">
+
+            <div class="groups-header">
+
+                <span class="eyebrow">
+                    REFERENCE
+                </span>
+
+                <h2>
+                    Group distribution
+                </h2>
+
             </div>
 
 
-            <div class="groups">
+            <div class="groups-grid">
 
-                <h2>Répartition des groupes</h2>
-
-                <div class="groups-grid">
-
-                    <div class="group">
-                        <strong>G1</strong>
-                        <span>— avant AMEN</span>
-                    </div>
-
-                    <div class="group">
-                        <strong>G2</strong>
-                        <span>— AMEN → BOUH</span>
-                    </div>
-
-                    <div class="group">
-                        <strong>G3</strong>
-                        <span>— BOUH → EL H</span>
-                    </div>
-
-                    <div class="group">
-                        <strong>G4</strong>
-                        <span>— EL H → FARR</span>
-                    </div>
-
-                    <div class="group">
-                        <strong>G5</strong>
-                        <span>— FARR → KARS</span>
-                    </div>
-
-                    <div class="group">
-                        <strong>G6</strong>
-                        <span>— KARS → OUBA</span>
-                    </div>
-
-                    <div class="group">
-                        <strong>G7</strong>
-                        <span>— OUBA et après</span>
-                    </div>
-
+                <div class="group">
+                    <strong>G1</strong>
+                    <span>Before AMEN</span>
                 </div>
+
+                <div class="group">
+                    <strong>G2</strong>
+                    <span>AMEN → BOUH</span>
+                </div>
+
+                <div class="group">
+                    <strong>G3</strong>
+                    <span>BOUH → EL H</span>
+                </div>
+
+                <div class="group">
+                    <strong>G4</strong>
+                    <span>EL H → FARR</span>
+                </div>
+
+                <div class="group">
+                    <strong>G5</strong>
+                    <span>FARR → KARS</span>
+                </div>
+
+                <div class="group">
+                    <strong>G6</strong>
+                    <span>KARS → OUBA</span>
+                </div>
+
+                <div class="group group-last">
+                    <strong>G7</strong>
+                    <span>OUBA and after</span>
+                </div>
+
             </div>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <footer>
-            S3 • Outil de recherche de groupe
-        </footer>
+    <!-- Footer -->
+    <footer>
 
-    </main>
+        <span>
+            © 2026 Group Finder
+        </span>
+
+        <span class="footer-dot">
+            •
+        </span>
+
+        <span>
+            Created by
+            <strong>Hamza</strong>
+            ·
+            <a
+                href="https://github.com/u0ke"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                u0ke · GitHub
+            </a>
+        </span>
+
+    </footer>
+
+</main>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
+```
 
 </body>
 </html>
