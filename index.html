@@ -1,198 +1,166 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Group Finder</title>
+    <title>Group Finder</title>
 
-<link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
 
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <main class="container">
 
-<main class="container">
-
-    <!-- Header -->
-    <header class="header">
-
-        <div class="header-top">
-
-            <div class="badge">
-                S3
-                <span>•</span>
-                GROUP FINDER
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <p class="eyebrow">GROUP FINDER</p>
+                <h1>Find Your Group</h1>
+                <p class="subtitle">
+                    Enter your last name to discover your assigned group.
+                </p>
             </div>
 
             <button
                 id="themeToggle"
                 class="theme-toggle"
                 type="button"
-                aria-label="Switch theme"
+                aria-label="Toggle dark mode"
             >
                 <span id="themeIcon">☾</span>
-                <span id="themeText">Dark</span>
             </button>
-
-        </div>
-
-        <h1>Find Your Group</h1>
-
-        <p class="subtitle">
-            Enter your last name to instantly find your assigned group.
-        </p>
-
-    </header>
-
-
-    <!-- Main Card -->
-    <section class="card">
-
-        <div class="section-heading">
-
-            <span class="eyebrow">
-                SEARCH
-            </span>
-
-            <h2>
-                Enter your last name
-            </h2>
-
-        </div>
-
+        </header>
 
         <!-- Search -->
-        <label for="lastname">
-            Last name
-        </label>
+        <section class="search-section">
 
-        <input
-            type="text"
-            id="lastname"
-            placeholder="e.g. AMEN"
-            autocomplete="off"
-        >
+            <label for="lastName">
+                Last Name
+            </label>
 
-        <p class="info">
-            Groups are assigned according to alphabetical order.
-        </p>
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="lastName"
+                    placeholder="Enter your last name..."
+                    autocomplete="off"
+                    spellcheck="false"
+                >
 
+                <button
+                    id="searchBtn"
+                    type="button"
+                >
+                    Search
+                </button>
+            </div>
+
+        </section>
 
         <!-- Result -->
-        <div
+        <section
             id="result"
             class="result"
             aria-live="polite"
         >
-
-            <div>
-
-                <span class="result-icon">
-                    ⌕
-                </span>
+            <div class="result-content">
+                <span class="result-icon">⌕</span>
 
                 <span class="result-message">
                     Type your last name above
                 </span>
-
             </div>
-
-        </div>
-
+        </section>
 
         <!-- Groups -->
-        <div class="groups">
+        <section class="groups-section">
 
-            <div class="groups-header">
-
-                <span class="eyebrow">
-                    REFERENCE
-                </span>
-
-                <h2>
-                    Group distribution
-                </h2>
-
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">OVERVIEW</p>
+                    <h2>Group Distribution</h2>
+                </div>
             </div>
-
 
             <div class="groups-grid">
 
-                <div class="group">
-                    <strong>G1</strong>
-                    <span>Before AMEN</span>
+                <div class="group-card">
+                    <span class="group-number">G1</span>
+                    <span class="group-arrow">→</span>
+                    <span class="group-range">AMEN</span>
                 </div>
 
-                <div class="group">
-                    <strong>G2</strong>
-                    <span>AMEN → BOUH</span>
+                <div class="group-card">
+                    <span class="group-number">G2</span>
+                    <span class="group-arrow">→</span>
+                    <span class="group-range">BOUH</span>
                 </div>
 
-                <div class="group">
-                    <strong>G3</strong>
-                    <span>BOUH → EL H</span>
+                <div class="group-card">
+                    <span class="group-number">G3</span>
+                    <span class="group-arrow">→</span>
+                    <span class="group-range">EL H</span>
                 </div>
 
-                <div class="group">
-                    <strong>G4</strong>
-                    <span>EL H → FARR</span>
+                <div class="group-card">
+                    <span class="group-number">G4</span>
+                    <span class="group-arrow">→</span>
+                    <span class="group-range">FARR</span>
                 </div>
 
-                <div class="group">
-                    <strong>G5</strong>
-                    <span>FARR → KARS</span>
+                <div class="group-card">
+                    <span class="group-number">G5</span>
+                    <span class="group-arrow">→</span>
+                    <span class="group-range">KARS</span>
                 </div>
 
-                <div class="group">
-                    <strong>G6</strong>
-                    <span>KARS → OUBA</span>
+                <div class="group-card">
+                    <span class="group-number">G6</span>
+                    <span class="group-arrow">→</span>
+                    <span class="group-range">OUBA</span>
                 </div>
 
-                <div class="group group-last">
-                    <strong>G7</strong>
-                    <span>OUBA and after</span>
+                <div class="group-card">
+                    <span class="group-number">G7</span>
+                    <span class="group-arrow">→</span>
+                    <span class="group-range">OUbA+</span>
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>
+                © 2026 Group Finder
+            </p>
 
+            <p>
+                Created by
+                <a
+                    href="https://github.com/u0ke"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Hamza
+                </a>
+            </p>
+        </footer>
 
-    <!-- Footer -->
-    <footer>
+    </main>
 
-        <span>
-            © 2026 Group Finder
-        </span>
-
-        <span class="footer-dot">
-            •
-        </span>
-
-        <span>
-            Created by
-            <strong>Hamza</strong>
-            ·
-            <a
-                href="https://github.com/u0ke"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                u0ke · GitHub
-            </a>
-        </span>
-
-    </footer>
-
-</main>
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
