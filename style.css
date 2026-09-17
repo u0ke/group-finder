@@ -239,7 +239,6 @@ input:focus {
 
 .result {
     min-height: 142px;
-
     margin-top: 22px;
 
     display: flex;
@@ -252,7 +251,6 @@ input:focus {
     border-radius: 17px;
 
     background: var(--surface-soft);
-
     color: var(--muted);
 
     text-align: center;
@@ -260,15 +258,31 @@ input:focus {
     transition: 0.25s ease;
 }
 
+/* GREEN ONLY WHEN A RESULT IS FOUND */
+
 .result.success {
-    background: var(--accent-soft);
-    border-color: #66708555;
-    color: var(--text);
+    background: #e8f7ed;
+    border-color: #a8ddb8;
+    color: #246b3a;
 }
+
+.result.success .small {
+    color: #4d8060;
+}
+
+.result.success .group-name {
+    color: #219653;
+}
+
+.result.success .name {
+    color: #4d8060;
+}
+
+
+/* RESULT CONTENT */
 
 .result-icon {
     display: block;
-
     margin-bottom: 9px;
 
     font-size: 25px;
@@ -279,7 +293,6 @@ input:focus {
 
 .result-message {
     display: block;
-
     font-size: 14px;
 }
 
@@ -298,8 +311,8 @@ input:focus {
 
     color: var(--text);
 
-    font-size: 38px;
-    font-weight: 850;
+    font-size: 42px;
+    font-weight: 900;
 
     line-height: 1;
 
@@ -317,6 +330,26 @@ input:focus {
     font-weight: 700;
 }
 
+
+/* DARK MODE — GREEN ONLY AFTER SEARCH */
+
+body.dark .result.success {
+    background: #102b1b;
+    border-color: #276b3e;
+    color: #b8e8c7;
+}
+
+body.dark .result.success .small {
+    color: #8fcba3;
+}
+
+body.dark .result.success .group-name {
+    color: #4ade80;
+}
+
+body.dark .result.success .name {
+    color: #8fcba3;
+}
 /* GROUPS */
 
 .groups {
