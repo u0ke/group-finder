@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f6fa;
+
+    color: #071a35;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 560px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border: 1px solid #dce1e8;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    color: #31506f;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+
+h1 {
+    font-size: 34px;
+    line-height: 1.2;
+
+    color: #071a35;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+    color: #58708d;
+
+    font-size: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: #ffffff;
+
+    border: 1px solid #e1e5eb;
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    text-align: left;
+
+    box-shadow:
+        0 20px 45px rgba(20, 40, 70, 0.08);
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+label {
+    display: block;
+
+    color: #071a35;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 9px;
+}
+
+
+input {
+    width: 100%;
+
+    height: 58px;
+
+    padding: 0 17px;
+
+    border: 1px solid #cfd6df;
+
+    border-radius: 14px;
+
+    outline: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    color: #071a35;
+
+    background: #ffffff;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+input::placeholder {
+    color: #7b8188;
+
+    font-weight: 700;
+}
+
+
+input:focus {
+    border-color: #52708f;
+
+    box-shadow:
+        0 0 0 3px rgba(82, 112, 143, 0.12);
+}
+
+
+.info {
+    margin-top: 9px;
+
+    color: #58708d;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESULT
+========================= */
+
+.result {
+    height: 150px;
+
+    margin-top: 22px;
+
+    border: 1px solid #dce2e9;
+
+    border-radius: 17px;
+
+    background: #fafafa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    color: #58708d;
+
+    font-size: 16px;
+
+    transition: 0.25s ease;
+}
+
+
+.result.success {
+    background: #f6f9fc;
+
+    border-color: #bfcbd8;
+
+    color: #071a35;
+}
+
+
+.result .small {
+    display: block;
+
+    font-size: 14px;
+
+    color: #58708d;
+
+    margin-bottom: 8px;
+}
+
+
+.result .group-name {
+    display: block;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    color: #071a35;
+}
+
+
+.result .name {
+    display: block;
+
+    margin-top: 7px;
+
+    font-size: 14px;
+
+    color: #58708d;
+}
+
+
+/* =========================
+   GROUPS
+========================= */
+
+.groups {
+    margin-top: 18px;
+
+    padding-top: 19px;
+
+    border-top: 1px solid #e1e5eb;
+}
+
+
+.groups h2 {
+    font-size: 14px;
+
+    margin-bottom: 11px;
+
+    color: #071a35;
+}
+
+
+.groups-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 7px;
+}
+
+
+.group {
+    min-height: 35px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 8px 10px;
+
+    border: 1px solid #dfe4ea;
+
+    border-radius: 10px;
+
+    background: #fafbfc;
+
+    color: #31506f;
+
+    font-size: 12px;
+}
+
+
+.group strong {
+    color: #071a35;
+
+    margin-right: 3px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 17px;
+
+    color: #91a0b2;
+
+    font-size: 11px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .groups-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

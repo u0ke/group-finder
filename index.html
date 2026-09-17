@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recherche de votre groupe</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="badge">
+            S3 • LISTE DES GROUPES
+        </div>
+
+        <h1>Recherche de votre groupe</h1>
+
+        <p class="subtitle">
+            Entrez votre nom de famille pour connaître votre groupe.
+        </p>
+
+
+        <section class="card">
+
+            <label for="lastname">
+                Nom de famille
+            </label>
+
+            <input
+                type="text"
+                id="lastname"
+                placeholder="EX. LAKBICH"
+                autocomplete="off"
+            >
+
+            <p class="info">
+                La recherche se fait selon l'ordre alphabétique de la liste.
+            </p>
+
+
+            <div id="result" class="result">
+                Écrivez votre nom ci-dessus
+            </div>
+
+
+            <div class="groups">
+
+                <h2>Répartition des groupes</h2>
+
+                <div class="groups-grid">
+
+                    <div class="group">
+                        <strong>G1</strong>
+                        <span>— avant AMEN</span>
+                    </div>
+
+                    <div class="group">
+                        <strong>G2</strong>
+                        <span>— AMEN → BOUH</span>
+                    </div>
+
+                    <div class="group">
+                        <strong>G3</strong>
+                        <span>— BOUH → EL H</span>
+                    </div>
+
+                    <div class="group">
+                        <strong>G4</strong>
+                        <span>— EL H → FARR</span>
+                    </div>
+
+                    <div class="group">
+                        <strong>G5</strong>
+                        <span>— FARR → KARS</span>
+                    </div>
+
+                    <div class="group">
+                        <strong>G6</strong>
+                        <span>— KARS → OUBA</span>
+                    </div>
+
+                    <div class="group">
+                        <strong>G7</strong>
+                        <span>— OUBA et après</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            S3 • Outil de recherche de groupe
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
