@@ -5,11 +5,6 @@ const themeToggle = document.getElementById("themeToggle");
 const themeIcon = document.getElementById("themeIcon");
 const themeText = document.getElementById("themeText");
 
-
-/* =========================
-   NORMALIZE NAME
-========================= */
-
 function normalizeName(name) {
     return name
         .trim()
@@ -18,10 +13,6 @@ function normalizeName(name) {
         .replace(/[\u0300-\u036f]/g, "");
 }
 
-
-/* =========================
-   FIND GROUP
-========================= */
 
 function findGroup(lastname) {
     const name = normalizeName(lastname);
@@ -56,11 +47,6 @@ function findGroup(lastname) {
 
     return "G7";
 }
-
-
-/* =========================
-   SHOW RESULT
-========================= */
 
 function showResult() {
     const lastname = lastnameInput.value.trim();
@@ -101,11 +87,6 @@ function showResult() {
     `;
 }
 
-
-/* =========================
-   THEME
-========================= */
-
 function setTheme(theme) {
     if (theme === "dark") {
         document.body.classList.add("dark");
@@ -134,11 +115,6 @@ function setTheme(theme) {
     }
 }
 
-
-/* =========================
-   LOAD SAVED THEME
-========================= */
-
 const savedTheme = localStorage.getItem("group-finder-theme");
 
 if (savedTheme === "dark") {
@@ -146,11 +122,6 @@ if (savedTheme === "dark") {
 } else {
     setTheme("light");
 }
-
-
-/* =========================
-   THEME BUTTON
-========================= */
 
 themeToggle.addEventListener("click", function () {
     const darkMode = document.body.classList.contains("dark");
@@ -161,10 +132,5 @@ themeToggle.addEventListener("click", function () {
         setTheme("dark");
     }
 });
-
-
-/* =========================
-   SEARCH
-========================= */
 
 lastnameInput.addEventListener("input", showResult);
